@@ -12,10 +12,9 @@
 </head>
 <body>
 <h2>
-    ${message}<br>
-    User: yzqn<br>
-    Date: 2017/11/27<br>
-    Time: 2:47<br>
+    Update：${message}<br>
+    User：yzqn<br>
+    Time： ${lastUpdateTime}<br>
 </h2>
 </body>
 </html>

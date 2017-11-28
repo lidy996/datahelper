@@ -15,7 +15,8 @@ public class UserController {
 
     @RequestMapping("")
     public String init(Model model){
-        model.addAttribute("message",userService.getUser().getPassword());
+        model.addAttribute("message",userService.getUser().getUsername());
+        model.addAttribute("lastUpdateTime",userService.getUser().getPassword());
         return "index";
     }
 }
