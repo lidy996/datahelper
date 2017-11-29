@@ -1,5 +1,6 @@
 package com.yzqn.datahelper.web.controller;
 
+import com.yzqn.datahelper.web.model.User;
 import com.yzqn.datahelper.web.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ public class UserController {
     public String init(Model model){
         model.addAttribute("message",userService.getUser().getUsername());
         model.addAttribute("lastUpdateTime",userService.getUser().getPassword());
+
         return "index";
     }
 }
