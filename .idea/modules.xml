@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/datahelper.iml" filepath="$PROJECT_DIR$/datahelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datahelper-commons/datahelper-commons.iml" filepath="$PROJECT_DIR$/datahelper-commons/datahelper-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datahelper-platform/datahelper-platform.iml" filepath="$PROJECT_DIR$/datahelper-platform/datahelper-platform.iml" />
     </modules>
   </component>
 </project>
