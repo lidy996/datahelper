@@ -10,9 +10,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="/resources/layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="//at.alicdn.com/t/font_tnyc012u2rlwstt9.css" media="all" />
-	<link rel="stylesheet" href="/resources/css/main.css" media="all" />
+    <%@include file="/WEB-INF/jsp/common/dh_css.jsp"%>
+    <%@include file="/WEB-INF/jsp/common/dh_js.jsp"%>
 </head>
 <body class="childrenBody">
 	<div class="panel_box row">
@@ -88,7 +87,7 @@
 		<div class="sysNotice col">
 			<blockquote class="layui-elem-quote title">更新日志</blockquote>
 			<div class="layui-elem-quote layui-quote-nm">
-				<img src="resources/images/张国荣.jpeg">
+				<img src="${pageContext.request.contextPath}resources/images/张国荣.jpeg">
 			</div>
 		</div>
 		<div class="sysNotice col">
@@ -137,16 +136,13 @@
 				</colgroup>
 				<tbody class="hot_news">
 					<h1>
-						争取2018年初完成这个项目<br>
-						yzqn<br>
-						2017-12-1 01:43<br>
+						${username}<br>
+						${password}<br>
 					</h1>
 				</tbody>
 			</table> 
 		</div>
 	</div>
 
-	<script type="text/javascript" src="/resources/layui/layui.js"></script>
-	<script type="text/javascript" src="/resources/js/main.js"></script>
 </body>
 </html>
