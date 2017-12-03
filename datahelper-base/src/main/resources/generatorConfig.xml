@@ -2,7 +2,7 @@
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
 
-	<classPathEntry location="mysql-connector-java-5.1.41.jar" />
+	<classPathEntry location="datahelper-base/mysql-connector-java-5.1.41.jar" />
 
 	<context id="context">
 
