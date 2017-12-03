@@ -1,19 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>首页--layui后台管理模板</title>
-	<meta name="renderer" content="webkit">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="format-detection" content="telephone=no">
-    <%@include file="/WEB-INF/jsp/common/dh_css.jsp"%>
-    <%@include file="/WEB-INF/jsp/common/dh_js.jsp"%>
-</head>
 <body class="childrenBody">
+	<!--顶部菜单-->
 	<div class="panel_box row">
 		<div class="panel col">
 			<a href="javascript:;" data-url="page/message/message.html">
@@ -83,14 +70,17 @@
 			</a>
 		</div>
 	</div>
+	<!--左侧列表-->
 	<div class="row">
 		<div class="sysNotice col">
-			<blockquote class="layui-elem-quote title">更新日志</blockquote>
-			<div class="layui-elem-quote layui-quote-nm">
-				<img src="${pageContext.request.contextPath}resources/images/张国荣.jpeg">
-			</div>
+			<span style="font-size: 20px">
+				${username}<br>
+				${password}<br>
+			</span>
 		</div>
+		<!--右侧列表-->
 		<div class="sysNotice col">
+			<!--右侧上-->
 			<blockquote class="layui-elem-quote title">系统基本参数</blockquote>
 			<table class="layui-table">
 				<colgroup>
@@ -128,21 +118,34 @@
 					</tr>
 				</tbody>
 			</table>
-			<blockquote class="layui-elem-quote title">最近更新</blockquote>
-			<table class="layui-table" lay-skin="line">
+			<!--右侧下-->
+			<blockquote class="layui-elem-quote title">更新日志</blockquote>
+			<table class="layui-table">
 				<colgroup>
+					<col width="150">
+					<col width="200">
 					<col>
-					<col width="110">
 				</colgroup>
-				<tbody class="hot_news">
-					<h1>
-						${username}<br>
-						${password}<br>
-					</h1>
+				<thead>
+				<tr>
+					<th>昵称</th>
+					<th>加入时间</th>
+					<th>签名</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>贤心</td>
+					<td>2016-11-29</td>
+					<td>人生就像是一场修行</td>
+				</tr>
+				<tr>
+					<td>许闲心</td>
+					<td>2016-11-28</td>
+					<td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+				</tr>
 				</tbody>
-			</table> 
+			</table>
 		</div>
 	</div>
-
 </body>
-</html>

@@ -15,7 +15,7 @@
 	<link rel="icon" href="favicon.ico">
     <%@include file="/WEB-INF/jsp/common/dh_css.jsp"%>
     <%@include file="/WEB-INF/jsp/common/dh_js.jsp"%>
-	<%--<c:set var="menuFlag" value="console">--%>
+	<%--<c:set var="menuFlag" value="modifyPassword">--%>
 </head>
 <body class="main_body">
 	<div class="layui-layout layui-layout-admin">
@@ -25,7 +25,7 @@
 		<div class="layui-body layui-form">
 			<div class="layui-tab-content clildFrame">
 				<div class="layui-tab-item layui-show">
-					<%@include file="main.jsp" %>
+					修改密码
 				</div>
 			</div>
 		</div>

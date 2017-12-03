@@ -12,13 +12,13 @@ import javax.annotation.Resource;
  * @author yzqn
  */
 @Controller
+@RequestMapping("/console")
 public class ConsoleController {
 
     @Resource
     UserService userService;
 
-
-    @RequestMapping("")
+    @RequestMapping("/home")
     public String init(Model model){
         model.addAttribute("username",userService.getUser().getUsername());
         model.addAttribute("password",userService.getUser().getPassword());

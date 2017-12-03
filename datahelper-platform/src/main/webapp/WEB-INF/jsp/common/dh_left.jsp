@@ -15,48 +15,25 @@
     <div class="navBar layui-side-scroll">
         <!-- 左侧导航区域 -->
         <ul class="layui-nav layui-nav-tree" lay-filter="test">
-            <li class="layui-nav-item"><a href="">控制台</a></li>
-            <li class="layui-nav-item">
-                <a class="" href="javascript:;">我的信息</a>
+            <li <c:if test="${menuFlag == 'console'}">class="layui-nav-itemed"</c:if> class="layui-nav-item"><a href="${prc}/">控制台</a></li>
+            <li class="layui-nav-item" style="background-color: #009688">
+                <a href="javascript:;">我的信息</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:;">个人信息</a></dd>
-                    <dd><a href="javascript:;">修改密码</a></dd>
+                    <dd <c:if test="${menuFlag == 'info'}">class="layui-nav-itemed"</c:if> ><a href="${prc}/info">个人信息</a></dd>
+                    <dd <c:if test="${menuFlag == 'modifyPassword'}">class="layui-nav-itemed"</c:if> ><a href="${prc}/info/modify/password">修改密码</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:;">组织管理</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="javascript:;">列表一</a></dd>
-                    <dd><a href="javascript:;">列表二</a></dd>
-                    <dd><a href="javascript:;">列表三</a></dd>
-                </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:;">项目管理</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="javascript:;">列表一</a></dd>
-                    <dd><a href="javascript:;">列表二</a></dd>
-                    <dd><a href="javascript:;">列表三</a></dd>
-                </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:;">用户管理</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="javascript:;">列表一</a></dd>
-                    <dd><a href="javascript:;">列表二</a></dd>
-                    <dd><a href="javascript:;">列表三</a></dd>
-                </dl>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:;">支付接口</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="javascript:;">列表一</a></dd>
-                    <dd><a href="javascript:;">列表二</a></dd>
-                    <dd><a href="javascript:;">列表三</a></dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">消息私信</a>
                 <dl class="layui-nav-child">
                     <dd><a href="javascript:;">列表一</a></dd>
                     <dd><a href="javascript:;">列表二</a></dd>
