@@ -7,4 +7,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <c:set var="prc" value="${pageContext.request.contextPath}"/>
+
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/layui/layui.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/leftNav.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/index.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/main.js"></script>
