@@ -1,14 +1,10 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: yzqn
-  Date: 2017/12/2
-  Time: 19:37
+  Date: 2017/12/11
+  Time: 2:13
   To change this template use File | Settings | File Templates.
 --%>
-<c:set var="prc" value="${pageContext.request.contextPath}"/>
-
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/layui/layui.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/leftNav.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/index.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<script type="text/javascript" src="${prc}/resources/layui/layui.js"></script>
+<script type="text/javascript" src="${prc}/resources/js/admin.js"></script>

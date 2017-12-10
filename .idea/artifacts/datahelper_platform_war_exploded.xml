@@ -7,9 +7,6 @@
           <element id="module-output" name="datahelper-platform" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="datahelper-platform-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="datahelper-platform" />
-          </element>
           <element id="archive" name="datahelper-commons-1.0-SNAPSHOT.jar">
             <element id="module-output" name="datahelper-commons" />
           </element>

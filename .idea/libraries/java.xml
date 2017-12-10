@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/datahelper-base/src/main/java" />
+      <root url="file://$PROJECT_DIR$/datahelper-commons/src/main/java" />
+      <root url="file://$PROJECT_DIR$/datahelper-platform/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
