@@ -7,6 +7,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<c:set value="${pageContext.request.contextPath}" var="prc"></c:set>
+<c:set value="${pageContext.request.contextPath}" var="prc"/>
 <link rel="stylesheet" href="${prc}/resources/layui/css/layui.css"/>
 <link rel="stylesheet" href="${prc}/resources/css/admin.css"/>
+
+<link rel="stylesheet" href="${ctx}/resources/plugins/sweet-alert/sweetalert.min.css" />

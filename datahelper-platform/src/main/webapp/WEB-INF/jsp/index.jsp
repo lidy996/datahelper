@@ -17,7 +17,7 @@
             <div class="layui-main">
 				<div class="top-left">
 					<!-- logo -->
-					<a href="/" class="logo">datahelper</a>
+					<a href="${prc}/" class="logo">datahelper</a>
 					
 					<a href="javascript:;" class="menu-flexible">
 						<i class="layui-icon">&#xe635;</i> 
@@ -25,11 +25,8 @@
 				</div>
                 <!-- 头部一级菜单 -->
                 <ul class="layui-nav top-menu" lay-filter="top-menu">
-                    <li class="layui-nav-item layui-this"><a href="javascript:;">我的面板</a></li>
-                    <li class="layui-nav-item"><a href="javascript:;">系统管理</a></li>
-                    <li class="layui-nav-item"><a href="javascript:;">内容管理</a></li>
-                    <li class="layui-nav-item"><a href="javascript:;">应用管理</a></li>
-                    <li class="layui-nav-item"><a href="javascript:;">会员管理</a></li>
+                    <li class="layui-nav-item layui-this"><a href="${prc}/">控制面板</a></li>
+                    <li class="layui-nav-item "><a href="javascript:;" onclick="createProject()">创建项目</a></li>
                 </ul>
                 <!-- 头部右侧操作 -->
                 <ul class="layui-nav operate">
@@ -37,10 +34,10 @@
                         <a href="javascript:;">进入前台</a>
                     </li>
                     <li class="layui-nav-item">
-                        <a href="javascript:;">yzqn</a>
+                        <a href="javascript:;"><img src="${prc}/resources/img/张国荣.jpeg" style="width: 40px;height: 40px">yzqn</a>
                         <dl class="layui-nav-child">
                             <dd>
-                                <a href="javascript:;">个人信息</a>
+                                <a href="javascript:;">个人中心</a>
                             </dd>
                             <dd>
                             	<a href="javascript:;">修改密码</a>
@@ -59,64 +56,16 @@
             <div class="layui-side-scroll">
             	<ul class="layui-nav layui-nav-tree left-menu" lay-filter="left-menu">
                     <li class="layui-nav-item layui-this">
-                        <a href="javascript:;" data-url="home.html" data-id="1">后台首页</a>
+                        <a href="javascript:;" data-id="1">后台首页</a>
                     </li>
                     <li class="layui-nav-item">
-                        <a href="javascript:;">测试管理</a>
-                        <dl class="layui-nav-child">
-                            <dd>
-                                <a href="javascript:;" data-url="lists.html" data-id="2">测试列表</a>
-                            </dd>
-							<dd>
-                                <a href="javascript:;" data-url="login.html" data-id="8">登录页</a>
-                            </dd>
-                            <dd>
-                                <a href="javascript:;" data-url="tabletree.html" data-id="9">树表示例</a>
-                            </dd>
-                        </dl>
+                        <a href="javascript:;" data-id="2">我的项目</a>
                     </li>
-                </ul>
-                <ul class="layui-nav layui-nav-tree left-menu" lay-filter="left-menu">
                     <li class="layui-nav-item">
-                        <a href="javascript:;">后台用户</a>
-                        <dl class="layui-nav-child">
-                            <dd>
-                                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="3">登录日志</a>
-                            </dd>
-                            <dd>
-                                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="4">操作日志</a>
-                            </dd>
-                        </dl>
+                        <a href="javascript:;" data-id="3">我的组织</a>
                     </li>
-                </ul>
-				<ul class="layui-nav layui-nav-tree left-menu" lay-filter="left-menu">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">导航管理</a>
-                        <dl class="layui-nav-child">
-                            <dd>
-                                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="5">导航列表</a>
-                            </dd>
-                        </dl>
-                    </li>
-                </ul>
-				<ul class="layui-nav layui-nav-tree left-menu" lay-filter="left-menu">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">广告管理</a>
-                        <dl class="layui-nav-child">
-                            <dd>
-                                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="6">广告列表</a>
-                            </dd>
-                        </dl>
-                    </li>
-                </ul>
-				<ul class="layui-nav layui-nav-tree left-menu" lay-filter="left-menu">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">会员管理</a>
-                        <dl class="layui-nav-child">
-                            <dd>
-                                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="7">会员列表</a>
-                            </dd>
-                        </dl>
+                    <li class="layui-nav-item ">
+                        <a href="javascript:;" data-id="4">用户管理</a>
                     </li>
                 </ul>
             </div>
@@ -130,7 +79,9 @@
                 <div class="layui-tab-button">
                 	<a href="javascript:;"><i class="layui-icon">&#x1002;</i></a>
                 </div>
-                <div class="layui-tab-content"></div>
+                <div class="layui-tab-content">
+
+                </div>
             </div>
         </div>
 
@@ -140,4 +91,9 @@
         </div>
     </div>
 </body>
+<script>
+    function createProject() {
+        window.location.href = "${prc}/project/create"
+    }
+</script>
 </html>
