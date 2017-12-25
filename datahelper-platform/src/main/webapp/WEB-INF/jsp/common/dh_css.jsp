@@ -9,6 +9,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set value="${pageContext.request.contextPath}" var="prc"/>
 <link rel="stylesheet" href="${prc}/resources/layui/css/layui.css"/>
-<link rel="stylesheet" href="${prc}/resources/css/admin.css"/>
-
-<link rel="stylesheet" href="${ctx}/resources/plugins/sweet-alert/sweetalert.min.css" />
+<link rel="stylesheet" href="${prc}/resources/css/images.css" media="all" />
+<link rel="stylesheet" href="${prc}/resources/css/login.css" media="all" />
+<link rel="stylesheet" href="${prc}/resources/css/message.css" media="all" />
+<link rel="stylesheet" href="${prc}/resources/css/news.css" media="all" />
+<link rel="stylesheet" href="${prc}/resources/css/user.css" media="all" />
+<link rel="stylesheet" href="${prc}/resources/css/main.css" media="all" />
+<link rel="stylesheet" href="//at.alicdn.com/t/font_tnyc012u2rlwstt9.css" media="all" />

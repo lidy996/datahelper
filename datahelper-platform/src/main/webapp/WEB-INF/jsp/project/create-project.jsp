@@ -12,45 +12,8 @@
 <body>
 <!-- 布局容器 -->
 <div class="layui-layout layui-layout-admin">
-    <!-- 头部 -->
-    <div class="layui-header">
-        <div class="layui-main">
-            <div class="top-left">
-                <!-- logo -->
-                <a href="/" class="logo">datahelper</a>
-
-                <a href="javascript:;" class="menu-flexible">
-                    <i class="layui-icon">&#xe635;</i>
-                </a>
-            </div>
-            <!-- 头部一级菜单 -->
-            <ul class="layui-nav top-menu" lay-filter="top-menu">
-                <li class="layui-nav-item "><a href="javascript:;">控制面板</a></li>
-                <li class="layui-nav-item layui-this"><a href="javascript:;" onclick="createProject()">创建项目</a></li>
-            </ul>
-            <!-- 头部右侧操作 -->
-            <ul class="layui-nav operate">
-                <li class="layui-nav-item">
-                    <a href="javascript:;">进入前台</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;"><img src="${prc}/resources/img/张国荣.jpeg" style="width: 40px;height: 40px">yzqn</a>
-                    <dl class="layui-nav-child">
-                        <dd>
-                            <a href="javascript:;">个人中心</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;">修改密码</a>
-                        </dd>
-                        <dd>
-                            <a href="javascript:;">退出登录</a>
-                        </dd>
-                    </dl>
-                </li>
-            </ul>
-        </div>
-    </div>
-
+    <%@include file="/WEB-INF/jsp/common/dh_head.jsp"%>
+    <%@include file="/WEB-INF/jsp/common/dh_left.jsp"%>
     <!-- 主体 -->
     <div class="layui-body">
         <div class="layui-tab-content">
@@ -71,19 +34,6 @@
                         <input type="text" name="description" lay-verify="required" placeholder="请输入描述说明" autocomplete="off" class="layui-input">
                     </div>
                 </div>
-
-                <%--<div class="layui-form-item">--%>
-                    <%--<div class="layui-inline">--%>
-                        <%--<label class="layui-form-label">分组选择框</label>--%>
-                        <%--<div class="layui-input-inline">--%>
-                            <%--<select name="quiz">--%>
-                                <%--<option value="">请选择问题</option>--%>
-                                <%--<option value="你的工号">你的工号</option>--%>
-                                <%--<option value="你最喜欢的老师">你最喜欢的老师</option>--%>
-                            <%--</select>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">复选框</label>
@@ -119,9 +69,7 @@
     </div>
 
     <!-- 底部 -->
-    <div class="layui-footer">
-        yzqn
-    </div>
+    <%@include file="/WEB-INF/jsp/common/dh_foot.jsp"%>
 </div>
 </body>
 <script>

@@ -1,72 +1,80 @@
 package com.yzqn.datahelper.web.dto;
+
+import java.util.HashMap;
 import java.util.Map;
 
-public class JsonResult<T> {
-	private int resultCode;//0:成功，1:失败
-	private String message;//消息提示
-	private Boolean success;
-	private T data;
+/**
+ *
+ * @author yzqn
+ *
+ */
+public class JsonResult {
+
+	private boolean success;
+
+	private String msg;
+
+	private Object data;
+
 	private Map<String, Object> extras;
-	public JsonResult(){
-		super();
+
+	public JsonResult(boolean success) {
+		this(success, "");
 	}
 
-	public JsonResult(int resultCode) {
-		super();
-		this.resultCode = resultCode;
+	public JsonResult(boolean success, Object data) {
+		this(success, "", data);
 	}
-	public JsonResult(int resultCode, String message, T data, Map<String, Object> extras) {
-		super();
-		this.resultCode = resultCode;
-		this.message = message;
+
+	public JsonResult(boolean success, String msg) {
+		this(success, msg, null);
+	}
+
+	public JsonResult(boolean success, String msg, Object data) {
+		this.success = success;
+		this.msg = msg;
+		this.data = data;
+	}
+
+	public JsonResult(boolean success, String msg, Object data,Map<String, Object> extras) {
+		this.success = success;
+		this.msg = msg;
 		this.data = data;
 		this.extras = extras;
 	}
-	public JsonResult(int resultCode, String message, T data) {
-		super();
-		this.resultCode = resultCode;
-		this.message = message;
-		this.data = data;
+
+	public boolean isSuccess() {
+		return success;
 	}
-	public JsonResult(int resultCode, String message) {
-		super();
-		this.resultCode = resultCode;
-		this.message = message;
+
+	public void setSuccess(boolean success) {
+		this.success = success;
 	}
-	public JsonResult(int resultCode, T data) {
-		super();
-		this.resultCode = resultCode;
-		this.data = data;
+
+	public String getMsg() {
+		return msg;
 	}
-	public int getResultCode() {
-		return resultCode;
+
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
-	public void setResultCode(int resultCode) {
-		this.resultCode = resultCode;
-	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	public T getData() {
+
+	public Object getData() {
 		return data;
 	}
-	public void setData(T data) {
+
+	public void setData(Object data) {
 		this.data = data;
 	}
 
 	public Map<String, Object> getExtras() {
 		return extras;
 	}
-	public void setExtras(Map<String, Object> extras) {
-		this.extras = extras;
-	}
-	@Override
-	public String toString() {
-		return "JsonResult [resultCode=" + resultCode + ", message=" + message + ", data=" + data + ", extras=" + extras
-				+ "]";
-	}
 
+	public void addExtra(String key, Object value) {
+		if (this.extras == null) {
+			this.extras = new HashMap<String, Object>();
+		}
+		this.extras.put(key, value);
+	}
 }
